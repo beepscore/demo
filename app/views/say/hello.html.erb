@@ -23,5 +23,13 @@
 	Lift off!<br />
 
 	Email: <%= h("Ann & Bill <frasers@isp.email>") %>
+	
+	<p>
+		<!-- a href not recommended --> 
+		Say <a href="/say/goodbye">Goodbye</a> <br/>
+		Time to say
+		 <%= link_to "Goodbye!", :action => "goodbye" %>
+	</p>
+	
 </body>
 </html>
