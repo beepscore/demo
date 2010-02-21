@@ -4,6 +4,9 @@
 </head>
 <body>
 	<h1>Hello from Rails!</h1>
+	<p>
+		It is now <%= Time.now %>
+	</p>
 	<ul>
 		<li>Addition: <%= 1+2 %> </li>
 		<li>Concatenation: <%= "cow" + "boy" %> </li>
@@ -12,6 +15,13 @@
 	<% 3.times do -%>
 	Ho!<br/>
 	<% end -%>
-	Merry Christmas!
+	Merry Christmas!<br/>
+
+	<% 3.downto(1) do |count| -%>
+	<%= count %>...<br/>
+	<% end -%>
+	Lift off!<br />
+
+	Email: <%= h("Ann & Bill <frasers@isp.email>") %>
 </body>
 </html>
